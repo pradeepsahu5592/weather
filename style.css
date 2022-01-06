@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Jost:wght@600&family=Rubik:wght@500&family=Source+Sans+3:wght@900&family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-60deg,purple,white);
+    display: grid;
+    place-items: center;
+    font-family: 'Cabin', sans-serif;
+
+}
+.window{
+    width: 300px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.842),
+                -5px -5px 10px rgba(255, 255, 255,.5),
+                inset -5px -7px 5px rgba(255, 255, 255,.9);
+    position: relative;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frm1{
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    filter: blur(150px);
+
+}
+.frm2{
+    width: 200px;
+    height: 200px;
+    background: mediumvioletred;
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    filter: blur(150px);
+}
+.frm5{
+    width: 300px;
+    height: 300px;
+    background: rgb(63, 21, 199);
+    position: absolute;
+    bottom: 0px;
+    left: 370px;
+    filter: blur(150px);
+}
+.window .searchBox{
+    width: 60%;
+    line-height: 30px;
+    background: transparent;
+    margin-top: 25px;
+    position: relative;
+}
+.window .searchBox .searchInput{
+    width: 100%;
+    line-height: 30px;
+    background: transparent;
+    border-radius: 13px;
+    /* border: 1px solid gray; */
+    border: none;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0,.2),
+    inset -5px -5px 5px rgba(255, 255, 255,.5);
+    padding-left: 10px;
+}
+.window #searchBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    background: rgba(255, 255, 255,.3);
+}
+.window #searchBtn img{
+    width: 15px;
+    height: 15px;
+}
+.window .mainBox{
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.616);    
+    border-radius: 50px;
+    margin-top: 20px;
+    position: relative;
+
+}
+#place{
+    color: rgba(75, 75, 75, 0.65);
+}
+.window .mainBox #date{
+    width: 70%;
+    height: 30px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.493);
+    color: rgba(46, 46, 46, 0.856);
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.window .mainBox #discription{
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(49, 49, 49, 0.65);
+
+}
+.window .mainBox #cel{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+    /* transform: translate(-80%); */
+    font-size: 130px;
+    background: linear-gradient(60deg,#ff0044 ,#EC255A ,rgba(255, 255, 255, 1), rgb(16, 0, 233), rgb(17, 0, 255));
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent;
+    display: flex;
+}
+.window .details{
+    width: 280px;
+    height: 150px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.window .details .row1,.row2{
+    width: 100%;
+    height: 50%;
+    /* background: rgba(100, 149, 237,.5); */
+    display: flex;
+    justify-content: space-around;
+}
+#wind , #humidity ,#max ,#min ,#Pressure,#sea{
+    width: 70px;
+    height: 50px;
+    margin-top: 15px;
+    /* border: 1px solid rgba(156, 156, 156, 0.3); */
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 12.9px;
+}
+#country{
+    width: 120px;
+    margin-top: 5px;
+    height: 60px;
+    border-radius: 25px;
+    background: rgba(0, 0, 90, 0.411);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+
+}
+.icon{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 51.7%;
+    left: 10%;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather JS</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="background">
+            <div class="frm1"></div>
+            <div class="frm2"></div>
+            <div class="frm5"></div>
+        </div>
+        
+        <div class="searchBox">
+            <input class="searchInput" type="text" id="search" name="search" value="">
+            <button id="searchBtn">
+                <img src="svg/search.svg"  alt="">
+            </button>
+        </div>
+
+        <h1 id="place" >Balod</h1>
+        <div class="mainBox">
+            <h5 id="date">Monday , 06 January</h5>
+            <h4 id="discription">discription</h4>
+            <h1 id="cel">24<span style="font-size: 22px;font-weight: 600;">&deg;C</span></h1>
+        </div>
+
+        <img class="icon" src="svg/weather.svg" alt="">
+
+        <div class="details">
+            <div class="row1">
+                <div id="wind">
+                    <h3 id="windData"></h3>
+                    <h5>Wind</h5>
+                </div>
+                <div id="humidity">
+                    <h3 id="humidityData"></h3>
+                    <h5>Humidity</h5>
+                </div>
+                <div id="max">
+                    <h3 id="maxData"></h3>
+                    <h5>Max</h5>
+                </div>
+                <div id="min">
+                    <h3 id="minData"></h3>
+                    <h5>Min</h5>
+                </div>
+            </div>
+            <div class="row2">
+                <div id="Pressure">
+                    <h3 id="pressureData"></h3>
+                    <h5>Pressure</h5>
+                </div>
+                <div id="country">India</div>
+                <div id="sea">
+                    <h3 id="seaData"></h3>
+                    <h5>Sea Level</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
